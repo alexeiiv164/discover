@@ -18,9 +18,9 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1088px;
+    max-width: 1092px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 32px;
 }
 
 a {
@@ -116,6 +116,14 @@ a {
 
 .hills__video {
     float: right;
+}
+
+.hills__video-2 {
+    display: none;
+}
+
+.hills__video-3 {
+    display: none;
 }
 
 /* gallery */
@@ -233,3 +241,124 @@ a {
 }
 
 /* media */
+
+@media (max-width: 768px) {
+
+    .nav {
+        display: none;
+    }
+
+    /* hills */
+
+    .hills {        
+        text-align: center;
+    }
+
+    .hills__inner {
+        flex-direction: column-reverse;
+    }
+
+    .hills__block {
+        width: 100%;
+    }
+
+    .hills__video {
+        display: none;
+    }
+
+    .hills__video-2 {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    /* gallery */
+
+    .gallery__inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery__text {
+        margin-left: 0;
+    }
+
+    .gallery__block:first-child {
+        margin-bottom: 75px;
+    }
+
+    .gallery__block img {
+        width: 50%;
+    }
+
+    .gallery__imgs {
+        width: 50%;
+    }
+
+    .gallery__imgs img {
+        width: 100%;
+    }
+
+    /* other */
+
+    .other__inner {
+        flex-direction: column;
+    }
+
+    .other__block {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .other__block:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* hills */
+
+    .hills__video {
+        display: none;
+    }
+
+    .hills__video-2 {
+        display: none;
+    }
+
+    .hills__video-3 {
+        display: block;
+        margin-bottom: 37px;
+    }
+
+    /* gallery */
+
+    .gallery__block:first-child {
+        margin-bottom: 30px;
+    }
+
+    /* view */
+
+    .view {
+        padding-left: 32px;
+        background: url(img/view-2.png) no-repeat;
+    }
+
+    /* other */
+    
+    .other {
+        margin-bottom: 27px;
+    }
+
+    /* copy */
+
+    .copy {
+        margin-bottom: 42px;
+    }
+
+}
